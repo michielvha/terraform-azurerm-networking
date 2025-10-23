@@ -13,8 +13,8 @@ variable "environment" {
   type        = string
   
   validation {
-    condition     = can(regex("^(dev|test|uat|staging|prod)$", var.environment))
-    error_message = "Environment must be one of: dev, test, uat, staging, prod"
+    condition     = contains(["acceptance", "development", "integration", "production" ], var.environment)
+    error_message = "Environment must be one of: acceptance, development, integration, production"
   }
 }
 

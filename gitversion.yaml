@@ -2,7 +2,6 @@
 # manually verify with `gitversion (/showconfig)`
 # IMPORTANT: on initial onboarding comment out everything but workflow after first run you can put it back
 workflow: GitHubFlow/v1
-tag-prefix: '' # No prefix on tags (tags are like 0.0.1, not v0.0.1)
 semantic-version-format: Loose # Allow non-strict semver tags like 0.0.209-4
 # Custom version bump messages
 major-version-bump-message: '(BREAKING CHANGE|^.+!:)'
